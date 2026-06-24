@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jordan Lee — QA & Aspiring Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">misrw<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="status-badge">
+        <span class="status-dot"></span> Open to work · Remote friendly
+      </div>
+      <h1 class="hero-name">Hi, I'm <span class="name-highlight">Muhammad Irfan S R W</span> 👋</h1>
+      <div class="hero-typed-row">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        I spent years making sure software doesn't blow up in production —
+        automating tests, writing scripts, and catching bugs nobody else noticed.
+        Now I'm channeling that same obsession into data.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-solid">See My Work</a>
+        <a href="#contact" class="btn btn-outline">Say Hello</a>
+      </div>
+      <div class="hero-scroll">
+        <span class="scroll-arrow">↓</span>
+        <span>scroll to explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-col">
+          <div class="avatar-wrap">
+            <div class="avatar">🧑‍💻</div>
+            <p class="avatar-name">Jordan Lee</p>
+            <p class="avatar-loc">📍 Jakarta, Indonesia</p>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-bio">
+            I started my career doing <strong>manual testing</strong> — clicking through apps, writing bug reports, and learning how products actually break. That curiosity led me to <strong>automate everything</strong> with Selenium, Cypress, and Python.
+          </p>
+          <p class="about-bio">
+            Along the way I also dabbled in frontend — built UIs, understood how the DOM works, and cared about the user experience. It gave me a different lens on QA.
+          </p>
+          <p class="about-bio">
+            Now I'm making a deliberate shift into <strong>data analytics</strong>. My QA mindset — precision, skepticism, pattern recognition — turns out to be a superpower when working with data.
+          </p>
+          <div class="journey-list">
+            <div class="journey-step">
+              <span class="j-dot"></span>
+              <span>Started with manual QA & bug tracking</span>
+            </div>
+            <div class="journey-step">
+              <span class="j-dot"></span>
+              <span>Leveled up to Selenium & Cypress automation</span>
+            </div>
+            <div class="journey-step">
+              <span class="j-dot"></span>
+              <span>Picked up HTML/CSS/JS along the way</span>
+            </div>
+            <div class="journey-step">
+              <span class="j-dot"></span>
+              <span>Now deep in Python, SQL & data visualization</span>
+            </div>
+            <div class="journey-step active-step">
+              <span class="j-dot j-dot-active"></span>
+              <span><strong>Goal: land a data analyst role in 2026</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">A mix of QA muscle, some frontend DNA, and growing data chops.</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-animate-bars>
+          <div class="skill-card-title">
+            <span class="skill-icon">🧪</span> QA & Testing
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Manual Testing</span><span>90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="90"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Selenium</span><span>82%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="82"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Cypress</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="75"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Postman / API</span><span>78%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="78"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>pytest</span><span>70%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-w="70"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-animate-bars>
+          <div class="skill-card-title">
+            <span class="skill-icon">📊</span> Data & Python
+            <span class="learning-pill">Learning</span>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Python</span><span>65%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-data" data-w="65"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>SQL</span><span>60%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-data" data-w="60"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>pandas / numpy</span><span>55%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-data" data-w="55"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Data Visualization</span><span>45%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-data" data-w="45"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Tableau / Power BI</span><span>35%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-data" data-w="35"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-animate-bars>
+          <div class="skill-card-title">
+            <span class="skill-icon">🎨</span> Frontend
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>HTML / CSS</span><span>80%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-fe" data-w="80"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>JavaScript</span><span>65%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-fe" data-w="65"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>React (basics)</span><span>45%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-fe" data-w="45"></div></div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label"><span>Git / GitHub</span><span>75%</span></div>
+            <div class="bar-track"><div class="bar-fill bar-fe" data-w="75"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="section section-alt" id="stack">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">Tools and technologies I work with daily — or am actively learning.</p>
+      </div>
+
+      <div class="stack-group">
+        <p class="stack-group-label">QA & Testing</p>
+        <div class="stack-grid">
+          <div class="stack-item">
+            <i class="devicon-selenium-original"></i>
+            <span>Selenium</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-cypressio-plain"></i>
+            <span>Cypress</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-pytest-plain"></i>
+            <span>pytest</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-postman-plain"></i>
+            <span>Postman</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-jira-plain"></i>
+            <span>Jira</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-github-original"></i>
+            <span>GitHub Actions</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <p class="stack-group-label">Data & Python <span class="stack-learning-tag">Learning</span></p>
+        <div class="stack-grid">
+          <div class="stack-item">
+            <i class="devicon-python-plain"></i>
+            <span>Python</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-pandas-plain"></i>
+            <span>pandas</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-numpy-plain"></i>
+            <span>NumPy</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-jupyter-plain"></i>
+            <span>Jupyter</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-postgresql-plain"></i>
+            <span>SQL</span>
+          </div>
+          <div class="stack-item stack-item-text">
+            <span class="stack-text-icon">📊</span>
+            <span>Tableau</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stack-group">
+        <p class="stack-group-label">Frontend</p>
+        <div class="stack-grid">
+          <div class="stack-item">
+            <i class="devicon-html5-plain"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-css3-plain"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-javascript-plain"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-react-original"></i>
+            <span>React</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-git-plain"></i>
+            <span>Git</span>
+          </div>
+          <div class="stack-item">
+            <i class="devicon-vscode-plain"></i>
+            <span>VS Code</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="qa">🧪 QA</button>
+        <button class="filter-btn" data-filter="data">📊 Data</button>
+        <button class="filter-btn" data-filter="frontend">🎨 Frontend</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="proj-card" data-cat="qa">
+          <div class="proj-stripe qa-stripe"></div>
+          <div class="proj-type qa-type">🧪 QA Automation</div>
+          <h3>Java Automation Boilerplate</h3>
+          <p>A ready-to-use Selenium UI test automation framework built with Java, Cucumber BDD, and TestNG. Features Page Object Model, multi-browser support, ExtentReports, and Excel-driven test data.</p>
+          <div class="proj-tags">
+            <span>Java</span><span>Selenium</span><span>Cucumber</span><span>TestNG</span><span>Maven</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/fantazqis/Java_Automation_Boilerplate" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="qa">
+          <div class="proj-stripe qa-stripe"></div>
+          <div class="proj-type qa-type">🧪 API Testing</div>
+          <h3>REST API Test Framework</h3>
+          <p>pytest-based suite for testing a RESTful API — schema validation, auth flows, response time checks. Auto-generates Allure reports.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>Postman</span><span>Allure</span><span>REST</span>
+          </div>
+          <div class="proj-links">
+            <a href="#">GitHub →</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="data">
+          <div class="proj-stripe data-stripe"></div>
+          <div class="proj-type data-type">📊 Data Analysis</div>
+          <h3>Sales Trend Explorer</h3>
+          <p>12 months of sales data analyzed with pandas. Finds top products, seasonal trends, and revenue outliers. Visualized with Matplotlib.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>pandas</span><span>Matplotlib</span><span>Jupyter</span>
+          </div>
+          <div class="proj-links">
+            <a href="#">GitHub →</a><a href="#">Notebook →</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="data">
+          <div class="proj-stripe data-stripe"></div>
+          <div class="proj-type data-type">📊 Dashboard</div>
+          <h3>Bug Trend Dashboard</h3>
+          <p>Analyzed 2 years of Jira data with Python, then built a Tableau dashboard to show bug trends by sprint, team, and severity. My first real data project.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>SQL</span><span>Tableau</span><span>Jira API</span>
+          </div>
+          <div class="proj-links">
+            <a href="#">GitHub →</a><a href="#">Live →</a>
+          </div>
+        </div>
+
+        <div class="proj-card" data-cat="frontend">
+          <div class="proj-stripe fe-stripe"></div>
+          <div class="proj-type fe-type">🎨 Frontend</div>
+          <h3>Bug Tracker UI</h3>
+          <p>A minimal bug tracking dashboard inspired by my QA work. Filter by status, priority, and assignee. Built with plain HTML/CSS/JS — no frameworks.</p>
+          <div class="proj-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="proj-links">
+            <a href="#">GitHub →</a><a href="#">Live →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">2022 – Present</span>
+              <span class="tl-badge">Current</span>
+            </div>
+            <h3 class="tl-role">QA Automation Engineer</h3>
+            <p class="tl-company">PT. Teknologi Maju · Hybrid</p>
+            <ul class="tl-points">
+              <li>Built and maintained Selenium + Cypress test suites, cutting regression time by 45%</li>
+              <li>Owned API testing strategy using Postman and pytest — 300+ automated tests</li>
+              <li>Set up GitHub Actions pipelines for test runs on every PR</li>
+              <li>Started pulling and analyzing test metrics data using Python — sparked the data pivot</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">2020 – 2022</span>
+            </div>
+            <h3 class="tl-role">QA Engineer / Frontend Dev</h3>
+            <p class="tl-company">Startup Studio · Remote</p>
+            <ul class="tl-points">
+              <li>Split time between manual QA and building UI components in React and vanilla JS</li>
+              <li>Introduced automated smoke tests that caught critical regressions before each release</li>
+              <li>Developed a deeper appreciation for user experience — tested what I built</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-body">
+            <div class="tl-meta">
+              <span class="tl-date">2019 – 2020</span>
+            </div>
+            <h3 class="tl-role">Frontend Developer (Intern)</h3>
+            <p class="tl-company">Dev Agency · On-site</p>
+            <ul class="tl-points">
+              <li>Built responsive landing pages from Figma designs using HTML/CSS/JS</li>
+              <li>Cross-browser and cross-device testing — where the QA bug bit me for good</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRENTLY LEARNING -->
+  <section class="section learning-section">
+    <div class="container container-narrow">
+      <div class="learning-card">
+        <div class="learning-emoji">📚</div>
+        <div class="learning-text">
+          <p class="learning-label">Currently learning</p>
+          <div class="ticker-window">
+            <div class="ticker-track" id="ticker">
+              <span>Python for Data Analysis</span>
+              <span>SQL for Analytics</span>
+              <span>Tableau & Power BI</span>
+              <span>Statistics for Data Science</span>
+            </div>
+          </div>
+        </div>
+        <div class="learning-streak">
+          <span class="streak-num">🔥 38</span>
+          <span class="streak-label">day streak</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="section section-alt" id="quiz">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <h2 class="section-title">Guess my skills 🎯</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">Think you know my stack? Let's find out.</p>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quizProgress"></div>
+        </div>
+        <p class="quiz-question" id="quizQuestion">Loading...</p>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+        <div class="quiz-footer">
+          <span class="quiz-score" id="quizScore"></span>
+          <button class="btn btn-outline btn-sm" id="quizNext" style="display:none">Next →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES TEASER -->
+  <section class="section section-alt" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Certificates</h2>
+        <div class="section-line"></div>
+        <p class="section-sub">Credentials across QA, data analytics, frontend, and tools.</p>
+      </div>
+      <div class="cert-teaser-grid">
+
+        <div class="cert-teaser-card">
+          <div class="cert-cat-badge data-type">📊 Data Analytics</div>
+          <h3>Google Data Analytics Professional Certificate</h3>
+          <p class="cert-teaser-issuer">Google / Coursera · 2025</p>
+        </div>
+
+        <div class="cert-teaser-card">
+          <div class="cert-cat-badge data-type">📊 Data Analytics</div>
+          <h3>Python for Data Science & AI</h3>
+          <p class="cert-teaser-issuer">IBM / Coursera · 2025</p>
+        </div>
+
+        <div class="cert-teaser-card">
+          <div class="cert-cat-badge qa-type">🧪 QA & Testing</div>
+          <h3>ISTQB Foundation Level (CTFL)</h3>
+          <p class="cert-teaser-issuer">ISTQB · 2023</p>
+        </div>
+
+      </div>
+      <div class="cert-teaser-footer">
+        <p class="cert-teaser-count">+11 more certificates across 4 categories</p>
+        <a href="certificates.html" class="btn btn-outline">View All Certificates →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container container-narrow" style="text-align:center">
+      <div class="section-header">
+        <h2 class="section-title">Get in touch</h2>
+        <div class="section-line" style="margin:0.5rem auto 1.5rem"></div>
+      </div>
+      <p class="contact-sub">
+        Open to data analyst roles, QA positions, and interesting collabs.
+        I reply within a day — no ghosting, I promise.
+      </p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:jordan@example.com">
+          <span>📧</span> jordan@example.com
+        </a>
+        <a class="contact-link" href="#">
+          <span>💼</span> LinkedIn
+        </a>
+        <a class="contact-link" href="#">
+          <span>🐙</span> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Built with curiosity · <span class="accent-text">Jordan Lee</span> · 2026</p>
+    <p class="footer-sub">QA → Data Analytics. The journey continues.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

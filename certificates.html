@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificates — Jordan Lee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">jl<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="cert-page-header">
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to portfolio</a>
+      <h1 class="cert-page-title">Certificates & Credentials</h1>
+      <p class="cert-page-sub">
+        A collection of courses, certifications, and credentials across QA, data analytics,
+        and frontend development.
+      </p>
+      <div class="cert-summary-row" id="certSummary">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="cert-controls">
+    <div class="container">
+      <div class="cert-controls-inner">
+        <div class="cert-filter-bar" id="certFilterBar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="qa">🧪 QA & Testing</button>
+          <button class="filter-btn" data-filter="data">📊 Data Analytics</button>
+          <button class="filter-btn" data-filter="frontend">🎨 Frontend</button>
+          <button class="filter-btn" data-filter="tools">🛠️ Tools & Cloud</button>
+        </div>
+        <div class="cert-search-wrap">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="certSearch"
+            class="cert-search"
+            placeholder="Search certificates..."
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATE GRID -->
+  <section class="cert-grid-section">
+    <div class="container">
+      <p class="cert-count" id="certCount"></p>
+      <div class="cert-grid" id="certGrid">
+
+        <!-- QA & Testing -->
+        <div class="cert-card" data-cat="qa">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge qa-type">🧪 QA & Testing</div>
+            <span class="cert-year">2023</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-istqb">ISTQB</div>
+          </div>
+          <h3 class="cert-name">ISTQB Foundation Level (CTFL)</h3>
+          <p class="cert-issuer">ISTQB — International Software Testing Qualifications Board</p>
+          <p class="cert-id">Credential ID: CTFL-2023-00482</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="qa">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge qa-type">🧪 QA & Testing</div>
+            <span class="cert-year">2022</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-udemy">Udemy</div>
+          </div>
+          <h3 class="cert-name">Selenium WebDriver with Python</h3>
+          <p class="cert-issuer">Udemy — Arjun Kumar</p>
+          <p class="cert-id">Credential ID: UC-8f3a2c9d</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="qa">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge qa-type">🧪 QA & Testing</div>
+            <span class="cert-year">2023</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-udemy">Udemy</div>
+          </div>
+          <h3 class="cert-name">Cypress — Modern Automation Testing</h3>
+          <p class="cert-issuer">Udemy — Rahul Shetty</p>
+          <p class="cert-id">Credential ID: UC-4b1e7f2a</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="qa">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge qa-type">🧪 QA & Testing</div>
+            <span class="cert-year">2022</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-postman">Postman</div>
+          </div>
+          <h3 class="cert-name">Postman API Fundamentals</h3>
+          <p class="cert-issuer">Postman Academy</p>
+          <p class="cert-id">Credential ID: PM-APIFUND-5529</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <!-- Data Analytics -->
+        <div class="cert-card" data-cat="data" data-featured="true">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge data-type">📊 Data Analytics</div>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-google">Google</div>
+          </div>
+          <h3 class="cert-name">Google Data Analytics Professional Certificate</h3>
+          <p class="cert-issuer">Google / Coursera</p>
+          <p class="cert-id">Credential ID: COURSERA-GDA-2025</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="data" data-featured="true">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge data-type">📊 Data Analytics</div>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-ibm">IBM</div>
+          </div>
+          <h3 class="cert-name">Python for Data Science & AI</h3>
+          <p class="cert-issuer">IBM / Coursera</p>
+          <p class="cert-id">Credential ID: IBM-PY4DS-00218</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="data">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge data-type">📊 Data Analytics</div>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-kaggle">Kaggle</div>
+          </div>
+          <h3 class="cert-name">Pandas — Data Manipulation</h3>
+          <p class="cert-issuer">Kaggle Learn</p>
+          <p class="cert-id">Credential ID: KAGGLE-PANDAS-7731</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="data">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge data-type">📊 Data Analytics</div>
+            <span class="cert-year">2025</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-kaggle">Kaggle</div>
+          </div>
+          <h3 class="cert-name">Data Visualization</h3>
+          <p class="cert-issuer">Kaggle Learn</p>
+          <p class="cert-id">Credential ID: KAGGLE-DATAVIZ-8812</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="data">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge data-type">📊 Data Analytics</div>
+            <span class="cert-year">2026</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-udemy">Udemy</div>
+          </div>
+          <h3 class="cert-name">SQL for Data Analysis — Beginner to Advanced</h3>
+          <p class="cert-issuer">Udemy — Jose Portilla</p>
+          <p class="cert-id">Credential ID: UC-9c2d1a8f</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <!-- Frontend -->
+        <div class="cert-card" data-cat="frontend" data-featured="true">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge fe-type">🎨 Frontend</div>
+            <span class="cert-year">2020</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-fcc">fCC</div>
+          </div>
+          <h3 class="cert-name">Responsive Web Design Certification</h3>
+          <p class="cert-issuer">freeCodeCamp</p>
+          <p class="cert-id">Credential ID: FCC-RWD-JL2020</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="frontend">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge fe-type">🎨 Frontend</div>
+            <span class="cert-year">2021</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-fcc">fCC</div>
+          </div>
+          <h3 class="cert-name">JavaScript Algorithms & Data Structures</h3>
+          <p class="cert-issuer">freeCodeCamp</p>
+          <p class="cert-id">Credential ID: FCC-JSADS-JL2021</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="frontend">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge fe-type">🎨 Frontend</div>
+            <span class="cert-year">2021</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-udemy">Udemy</div>
+          </div>
+          <h3 class="cert-name">React — The Complete Guide</h3>
+          <p class="cert-issuer">Udemy — Maximilian Schwarzmüller</p>
+          <p class="cert-id">Credential ID: UC-7e5c3b1d</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <!-- Tools & Cloud -->
+        <div class="cert-card" data-cat="tools">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge tools-type">🛠️ Tools & Cloud</div>
+            <span class="cert-year">2023</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-github">GH</div>
+          </div>
+          <h3 class="cert-name">GitHub Actions — CI/CD Pipelines</h3>
+          <p class="cert-issuer">GitHub Skills</p>
+          <p class="cert-id">Credential ID: GHS-ACTIONS-4421</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+        <div class="cert-card" data-cat="tools">
+          <div class="cert-card-top">
+            <div class="cert-cat-badge tools-type">🛠️ Tools & Cloud</div>
+            <span class="cert-year">2024</span>
+          </div>
+          <div class="cert-logo-wrap">
+            <div class="cert-logo cert-logo-docker">Docker</div>
+          </div>
+          <h3 class="cert-name">Docker Foundations Professional Certificate</h3>
+          <p class="cert-issuer">Docker / LinkedIn Learning</p>
+          <p class="cert-id">Credential ID: LI-DOCKER-2024</p>
+          <a href="#" class="cert-link">View Certificate →</a>
+        </div>
+
+      </div>
+
+      <!-- Empty state -->
+      <div class="cert-empty" id="certEmpty" style="display:none">
+        <p>🔍 No certificates match your search.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Built with curiosity · <span class="accent-text">Jordan Lee</span> · 2026</p>
+    <p class="footer-sub">QA → Data Analytics. The journey continues.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="certificates.js"></script>
+</body>
+</html>
