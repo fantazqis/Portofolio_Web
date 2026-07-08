@@ -40,9 +40,8 @@
   /* ── Typing animation ── */
   const phrases = [
     'QA Automation Engineer.',
-    'Manual Testing Pro.',
+    'Manual Tester.',
     'Python Enthusiast.',
-    'Aspiring Data Analyst.',
   ];
   const typedEl = document.getElementById('typed-text');
   let pi = 0, ci = 0, deleting = false;
